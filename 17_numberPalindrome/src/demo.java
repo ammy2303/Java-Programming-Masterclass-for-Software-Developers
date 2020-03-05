@@ -1,0 +1,31 @@
+
+public class demo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		isPalindrome(11);
+		
+	}
+
+	public static boolean isPalindrome(int number) {
+		
+		int num = 0;
+		int num1 = 0;
+		int num2 = number;
+		while(number!=0) {
+			num = number % 10;
+			num1 = (num1 * 10) + num;
+			number = number / 10;
+		}
+		if(num1 == num2) {
+			System.out.println(num1+ " " +num2);
+			System.out.println("true");
+			return true;
+		}else
+			System.out.println(num1+ " " +num2);
+			System.out.println("false");
+			return false;
+	}
+	
+}

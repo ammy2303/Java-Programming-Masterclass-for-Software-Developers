@@ -1,0 +1,24 @@
+
+public class demo {
+
+	public static void main(String[] args) {
+		getLargestPrime(16);
+	}
+
+	public static int getLargestPrime(int number) {
+		if(number<1) {
+			return -1;
+		}
+		int count = 0;
+		
+		int copy = number;
+		for(int i = 1; i <= copy; i++) {
+			if(copy%i==0) {
+				count++;
+				System.out.println("Count is "+count+" and factor is "+i);
+			}
+		}
+		
+		return 0;
+	}
+}

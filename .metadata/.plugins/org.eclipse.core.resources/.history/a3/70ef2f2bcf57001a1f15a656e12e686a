@@ -1,0 +1,104 @@
+
+public class demo {
+
+	public static void main(String[] args) {
+		
+		numberToWords(4556);
+		reverse(600);
+		
+	}
+	
+	public static void numberToWords(int number) {
+		if(number<0) {
+			System.out.println("Invalid Value");
+		}
+		int remainder = 0;
+		while(number != 0) {
+			remainder = number % 10;
+			number = number / 10;
+			switch(remainder) {
+			case 0:
+				System.out.println("ZERO");
+				break;
+			case 1:
+				System.out.println("ONE");
+				break;
+			case 2:
+				System.out.println("TWO");
+				break;
+			case 3:
+				System.out.println("THREE");
+				break;
+			case 4:
+				System.out.println("FOUR");
+				break;
+			case 5:
+				System.out.println("FIVE");
+				break;
+			case 6:
+				System.out.println("SIX");
+				break;
+			case 7:
+				System.out.println("SEVEN");
+				break;
+			case 8:
+				System.out.println("EIGHT");
+				break;
+			case 9:
+				System.out.println("NINE");
+				break;
+			default:
+				System.out.println("Exception");
+				break;	
+			
+			}
+		}
+		
+	}
+	
+	public static int reverse(int number) {
+		int newnum = 0;
+		int numcopy = number;
+		int remainder = 0;
+		while(number != 0) {
+			remainder = number % 10;
+			number = number / 10;
+			
+			newnum = (newnum * 10) + remainder;
+		}
+		System.out.println(newnum);
+		return newnum;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+
+}

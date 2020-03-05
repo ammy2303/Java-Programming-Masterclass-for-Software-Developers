@@ -1,0 +1,50 @@
+
+public class demo {
+
+	public static void main(String[] args) {
+		getLargestPrime(16);
+	}
+	
+	public static int getLargestPrime(int number) {
+		if(number<=1) {
+			return -1;
+		}
+		int count = 0;
+		int temp = 0;
+		for(int i =1; i<number; i++) {
+			if(number%i ==0) {
+				count++;
+				temp = i;
+				/*
+				 * System.out.println(temp); System.out.println("count is"+count);
+				 */
+			}
+		}
+		//System.out.println(count);
+		//getLargestPrime(temp);
+		
+		
+
+		
+		if(count<2) {
+			System.out.println("Printing Number"+number);
+			return number;
+		}else {
+			System.out.println("Printing temp"+temp);
+			return temp;
+		}		
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,15 @@
+
+public class simpleCalculator {
+
+	private double firstNumber;
+	private double secondNumner;
+
+public double getFirstNumber() {
+	return firstNumber;
+}
+
+
+
+
+}
+

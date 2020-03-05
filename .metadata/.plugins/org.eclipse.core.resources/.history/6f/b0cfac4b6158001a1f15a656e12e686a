@@ -1,0 +1,29 @@
+
+public class demo {
+
+	public static void main(String[] args) {
+		
+		getLargestPrime(21);
+		
+	}
+	
+	public static int getLargestPrime(int number) {
+		if(number<=1) {
+			return -1;
+		}
+		int count = 0;
+		int temp = 0;
+		for(int i =1; i<number/2; i++) {
+			if(number%i ==0) {
+				count++;
+				temp = i;
+			}
+		}
+		System.out.println(count);
+		System.out.println(temp);
+			return 0;
+		
+		
+	}
+	
+}
